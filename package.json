@@ -1,0 +1,12 @@
+{
+  "name": "crypto_labs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel watch -p 8080 ./src/index.html "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

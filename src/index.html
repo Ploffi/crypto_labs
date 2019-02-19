@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="/index.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="header">Шифрование с помощью магического квадрата</h1>
+    <main>
+        <div class="source">
+            <h4>Исходное сообщение</h4>
+            <textarea placeholder="Исходное сообщение" name="source" id="source" cols="30" rows="10"></textarea>
+            <div class="tableWrapper">
+                <h4>Ключ шифрования</h4>
+                <div><button id="generateKey" type="button">Сгенерировать ключ шифрования</button></div>
+                <div id="tableRootEncrypt">
+                </div>
+                <div class="control"> <button type="button" id="encrypt">Зашифровать</button></div>
+            </div>
+        </div>
+        <div class="crypted">
+            <h4>Зашифрованное сообщение</h4>
+            <textarea placeholder="Зашифрованное сообщение" name="crypted" id="crypted" cols="30" rows="10"></textarea>
+            <div class="tableWrapper">
+                <h4>Ключ дешифрования</h4>
+                <div id="tableRootDecrypt">
+                </div>
+                <div class="control"> <button type="button" id="decrypt">Дешифровать</button></div>
+            </div>
+        </div>
+        <div>
+            <h4>Расшифрованное сообщение</h4>
+            <textarea placeholder="Расшифрованное сообщение" name="encrypted" id="encrypted" cols="30" rows="10"
+                disabled></textarea>
+        </div>
+    </main>
+</body>
+
+</html>
